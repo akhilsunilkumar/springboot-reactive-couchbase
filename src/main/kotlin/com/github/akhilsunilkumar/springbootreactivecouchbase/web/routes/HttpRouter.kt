@@ -3,8 +3,10 @@ package com.github.akhilsunilkumar.springbootreactivecouchbase.web.routes
 import com.github.akhilsunilkumar.springbootreactivecouchbase.web.handler.MovieHandler
 import org.springframework.core.io.ClassPathResource
 import org.springframework.http.MediaType
+import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.server.router
 
+@Component
 class HttpRouter(
     private val movieHandler: MovieHandler
 ) {
