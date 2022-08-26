@@ -1,7 +1,7 @@
 package com.github.akhilsunilkumar.springbootreactivecouchbase.usecase
 
 import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.domain.Movie
-import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.`interface`.MovieRepository
+import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.interfaces.repository.MovieRepository
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 

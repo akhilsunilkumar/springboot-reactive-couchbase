@@ -1,0 +1,5 @@
+repository:
+  ip: localhost
+  bucket: "integrationTestBucket"
+  username: "admin"
+  password: "password"
