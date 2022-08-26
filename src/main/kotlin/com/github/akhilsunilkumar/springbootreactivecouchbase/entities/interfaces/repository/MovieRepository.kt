@@ -1,4 +1,4 @@
-package com.github.akhilsunilkumar.springbootreactivecouchbase.entities.`interface`
+package com.github.akhilsunilkumar.springbootreactivecouchbase.entities.interfaces.repository
 
 import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.domain.Movie
 import reactor.core.publisher.Flux

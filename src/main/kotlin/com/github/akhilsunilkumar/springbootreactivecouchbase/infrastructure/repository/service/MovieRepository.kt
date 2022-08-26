@@ -1,12 +1,11 @@
 package com.github.akhilsunilkumar.springbootreactivecouchbase.infrastructure.repository.service
 
 import com.couchbase.client.java.ReactiveCluster
-import com.couchbase.client.java.json.JsonArray
 import com.couchbase.client.java.json.JsonObject
 import com.couchbase.client.java.query.QueryOptions
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.domain.Movie
-import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.`interface`.MovieRepository
+import com.github.akhilsunilkumar.springbootreactivecouchbase.entities.interfaces.repository.MovieRepository
 import com.github.akhilsunilkumar.springbootreactivecouchbase.infrastructure.repository.config.RepositoryConfig
 import com.github.akhilsunilkumar.springbootreactivecouchbase.infrastructure.repository.mapper.MovieMapper
 import com.github.akhilsunilkumar.springbootreactivecouchbase.infrastructure.repository.model.MovieDTO
@@ -16,7 +15,7 @@ import reactor.core.publisher.Mono
 import java.util.UUID
 
 @Repository
-class MovieRepositoryImpl(
+class MovieRepository(
     private val cluster: ReactiveCluster,
     private val repositoryConfig: RepositoryConfig,
     private val objectMapper: ObjectMapper
